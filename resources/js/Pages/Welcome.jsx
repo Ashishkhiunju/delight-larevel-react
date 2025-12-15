@@ -11,25 +11,25 @@ export default function Welcome({ auth, items }) {
             <div className="relative mb-12">
                 <div className="absolute inset-0 bg-black opacity-20 z-10 rounded-lg"></div>
                 <img
-                    src="/images/banner.png"
+                    src="/images/banner3.jpg"
                     alt="Delight Boutique Banner"
                     className="w-full h-[400px] object-cover rounded-lg shadow-xl"
                 />
                 <div className="absolute inset-0 flex items-center justify-center z-20">
                     <div className="text-center text-white">
-                        <h1 className="text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl drop-shadow-lg">
+                        {/* <h1 className="text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl drop-shadow-lg">
                             Prime Delight Boutique
                         </h1>
                         <p className="mt-4 text-xl sm:text-2xl font-light drop-shadow-md">
                             Elegance in Every Detail
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </div>
 
             <div className="text-center mb-10">
                 <h2 className="text-3xl font-bold tracking-tight text-green-800 sm:text-4xl">
-                    Latest Collection
+                    Our Signature Creations
                 </h2>
                 <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500">
                     Discover our collection of exclusive items selected just for you.
@@ -61,7 +61,7 @@ export default function Welcome({ auth, items }) {
                                     </h3>
                                     <p className="mt-1 text-sm text-gray-500">{item.color} | Size {item.size}</p>
                                 </div>
-                                <p className="text-sm font-medium text-gray-900">${item.price}</p>
+                                {/* <p className="text-sm font-medium text-gray-900">${item.price}</p> */}
                             </div>
                             {item.description && (
                                 <p className="mt-2 text-xs text-gray-500 line-clamp-2">{item.description}</p>
@@ -79,14 +79,22 @@ export default function Welcome({ auth, items }) {
             <div className="mt-20">
                 <h2 className="text-3xl font-bold text-center text-green-800 mb-8">Visit Us</h2>
                 <div className="w-full h-96 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.184126488506!2d-73.98773128459411!3d40.74844057932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1629789876543!5m2!1sen!2sus"
+                    {/* <iframe
+                        src="https://maps.app.goo.gl/727hZP8ZHo2AWhws6"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
                         allowFullScreen=""
                         loading="lazy"
-                    ></iframe>
+                    ></iframe> */}
+                    <iframe
+                        src="https://www.google.com/maps?q=27.666755, 85.404900&z=18&output=embed"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </ShopLayout>

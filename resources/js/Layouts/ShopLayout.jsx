@@ -17,8 +17,8 @@ export default function ShopLayout({ user, children }) {
                                 <Link
                                     href="/"
                                     className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 transition duration-150 ease-in-out ${route().current('home')
-                                            ? 'border-green-600 text-gray-900 focus:border-green-700'
-                                            : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:text-gray-700 focus:border-gray-300'
+                                        ? 'border-green-600 text-gray-900 focus:border-green-700'
+                                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:text-gray-700 focus:border-gray-300'
                                         }`}
                                 >
                                     Home
@@ -26,21 +26,21 @@ export default function ShopLayout({ user, children }) {
                                 <Link
                                     href={route('about')}
                                     className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 transition duration-150 ease-in-out ${route().current('about')
-                                            ? 'border-green-600 text-gray-900 focus:border-green-700'
-                                            : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:text-gray-700 focus:border-gray-300'
+                                        ? 'border-green-600 text-gray-900 focus:border-green-700'
+                                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:text-gray-700 focus:border-gray-300'
                                         }`}
                                 >
                                     About Us
                                 </Link>
-                                <Link
+                                {/* <Link
                                     href={route('contact')}
                                     className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 transition duration-150 ease-in-out ${route().current('contact')
-                                            ? 'border-green-600 text-gray-900 focus:border-green-700'
-                                            : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:text-gray-700 focus:border-gray-300'
+                                        ? 'border-green-600 text-gray-900 focus:border-green-700'
+                                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:text-gray-700 focus:border-gray-300'
                                         }`}
                                 >
                                     Contact
-                                </Link>
+                                </Link> */}
                             </div>
                         </div>
                         <div className="hidden sm:flex sm:items-center sm:ml-6">
@@ -53,12 +53,12 @@ export default function ShopLayout({ user, children }) {
                                 </Link>
                             ) : (
                                 <>
-                                    <Link
+                                    {/* <Link
                                         href={route('login')}
                                         className="text-sm text-gray-700 hover:text-gray-900 underline"
                                     >
                                         Log in
-                                    </Link>
+                                    </Link> */}
                                     <Link
                                         href={route('register')}
                                         className="ml-4 text-sm text-gray-700 hover:text-gray-900 underline"
