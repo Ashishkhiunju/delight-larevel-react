@@ -13,7 +13,7 @@ export default function Welcome({ auth, items }) {
                 <img
                     src="/images/banner3.jpg"
                     alt="Delight Boutique Banner"
-                    className="w-full h-[400px] object-cover rounded-lg shadow-xl"
+                    className="w-full h-auto max-h-[400px] object-contain rounded-lg shadow-xl mx-auto"
                 />
                 <div className="absolute inset-0 flex items-center justify-center z-20">
                     <div className="text-center text-white">
