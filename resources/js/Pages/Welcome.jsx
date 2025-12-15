@@ -36,11 +36,11 @@ export default function Welcome({ auth, items }) {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                 {items && items.length > 0 ? (
                     items.map((item) => (
-                        <div key={item.id} className="group relative bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-200">
-                            <div className="w-full min-h-60 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                        <div key={item.id} className="group relative bg-white p-2 sm:p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-200">
+                            <div className="w-full h-40 sm:min-h-60 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
                                 {item.image_path ? (
                                     <img
                                         src={`/uploads/${item.image_path}`}
