@@ -59,12 +59,12 @@ export default function ShopLayout({ user, children }) {
                                     >
                                         Log in
                                     </Link> */}
-                                    <Link
+                                    {/* <Link
                                         href={route('register')}
                                         className="ml-4 text-sm text-gray-700 hover:text-gray-900 underline"
                                     >
                                         Register
-                                    </Link>
+                                    </Link> */}
                                 </>
                             )}
                         </div>
