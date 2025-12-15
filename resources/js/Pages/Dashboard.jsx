@@ -175,7 +175,7 @@ export default function Dashboard({ items }) {
                                             <tr key={item.id}>
                                                 <td className="px-6 py-4 whitespace-nowrap">
                                                     {item.image_path ? (
-                                                        <img src={`/storage/${item.image_path}`} alt={item.name} className="h-10 w-10 rounded-full object-cover" />
+                                                        <img src={`/uploads/${item.image_path}`} alt={item.name} className="h-10 w-10 rounded-full object-cover" />
                                                     ) : (
                                                         <div className="h-10 w-10 bg-gray-200 rounded-full flex items-center justify-center text-xs">N/A</div>
                                                     )}

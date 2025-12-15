@@ -38,7 +38,7 @@ class ItemController extends Controller
 
         $path = null;
         if ($request->hasFile('image')) {
-            $path = $request->file('image')->store('items', 'public');
+            $path = $request->file('image')->store('items', 'uploads');
         }
 
         Item::create([
@@ -69,10 +69,10 @@ class ItemController extends Controller
 
         $path = $item->image_path;
         if ($request->hasFile('image')) {
-            if ($path && Storage::disk('public')->exists($path)) {
-                Storage::disk('public')->delete($path);
+            if ($path && Storage::disk('uploads')->exists($path)) {
+                Storage::disk('uploads')->delete($path);
             }
-            $path = $request->file('image')->store('items', 'public');
+            $path = $request->file('image')->store('items', 'uploads');
         }
 
         $item->update([
@@ -92,8 +92,8 @@ class ItemController extends Controller
      */
     public function destroy(Item $item)
     {
-        if ($item->image_path && Storage::disk('public')->exists($item->image_path)) {
-            Storage::disk('public')->delete($item->image_path);
+        if ($item->image_path && Storage::disk('uploads')->exists($item->image_path)) {
+            Storage::disk('uploads')->delete($item->image_path);
         }
         $item->delete();
         return redirect()->back();

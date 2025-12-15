@@ -43,7 +43,7 @@ export default function Welcome({ auth, items }) {
                             <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
                                 {item.image_path ? (
                                     <img
-                                        src={`/storage/${item.image_path}`}
+                                        src={`/uploads/${item.image_path}`}
                                         alt={item.name}
                                         className="w-full h-full object-center object-cover lg:w-full lg:h-full"
                                     />
